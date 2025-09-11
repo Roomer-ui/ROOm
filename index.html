@@ -1,85 +1,118 @@
-
 <!doctype html>
 <html lang="en">
   <head>
-    <!--Required meta tags-->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <style>
-    h2 {
+    <!-- Bootstrap CSS -->
+    <link 
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+      crossorigin="anonymous">
+    
+    <title>Offers</title>
+
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      h2 {
         color: #AE275F;
-    font-weight: bold;
-    font-size: 48px;
-    text-align: center;
-    }
-    span.black {
-        color: black !important;
-    }
-    a.button {
-        padding: 10px;
-    color: white;
-    background: #AE275F;
-    border-radius: 12px;
-    font-size: 17px;
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-    }
-    .download-box {
-        padding: 10px;
-
-    }
-    @media only screen and (min-width: 765px) {
-        body, title {
-            display: none;
-        }
-    }
-  </style>
+        font-weight: bold;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+      .highlight {
+        color: black;
+      }
+      .btn-download {
+        display: inline-block;
+        padding: 12px 24px;
+        color: #fff;
+        background: #AE275F;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+      }
+      .btn-download:hover {
+        background: #8a1e4c;
+        text-decoration: none;
+      }
+      .download-box {
+        background: #fff;
+        border-radius: 0;
+        padding: 25px 15px;
+        margin: 0;
+        text-align: center;
+      }
+      .offer-text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      img.offer-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 0 !important; /* no rounded corners */
+        margin: 0;
+      }
+    </style>
+  </head>
   <body>
-          <title>Offers</title>
 
-     <!--<header>
-        <div class="container">
-            <div class="logo-area">
-                <center>
-                    <img src="./img/logo.webp" alt="" width="150px">
-                </center>
-            </div>
-        </div>
-    </header>-->
     <main>
-        <img src="./img/1.png" alt="" width="100%">
-        <img src="./img/2.jpg" alt="" width="100%">
-        <div class="download-box text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                    <!--    <h2>DOWNLOAD <span class="black">
-                            OUR APP
-                        </span></h2>-->
-                        <p class="text-center"><b>Enjoy 2X EDGE REWARDS Points* on online spends with our Credit Card</b></p>
-                        <a class="button" href="/PLAYING/">Download Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        
 
-        <img src="./img/3.jpeg" alt="" width="100%">
-        <img src="./img/4.jpg" alt="" width="100%">
-         <img src="./img/7.png" alt="" width="100%">
-          <img src="./img/8.png" alt="" width="100%">
-           <img src="./img/9.png" alt="" width="100%">
+      <!-- Top Images -->
+      <img src="./img/1.png" alt="" class="offer-img">
+      <img src="./img/2.jpg" alt="" class="offer-img">
+
+      <!-- Download Box -->
+      <div class="download-box">
+        <h2>Download <span class="highlight">Our App</span></h2>
+        <p class="offer-text">
+          Enjoy <b>2X EDGE REWARDS Points*</b> on online spends with our Credit Card
+        </p>
+        <a class="btn-download" href="/PLAYING/">Download Now</a>
+      </div>
+
+      <!-- More Images -->
+      <img src="./img/3.jpeg" alt="" class="offer-img">
+      <img src="./img/4.jpg" alt="" class="offer-img">
+      <img src="./img/7.png" alt="" class="offer-img">
+      <img src="./img/8.png" alt="" class="offer-img">
+      <img src="./img/9.png" alt="" class="offer-img">
+
     </main>
 
-     <!--jQuery first, then Popper.js, then Bootstrap JS-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+      crossorigin="anonymous"></script>
+
+    <!-- Script: Only mobile allow -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth > 768) {
+          // Desktop/tablet users ko 404 show kare
+          document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;font-size:40px;color:#AE275F;'>404 - Page Not Found</h1>";
+        }
+      });
+    </script>
   </body>
 </html>
