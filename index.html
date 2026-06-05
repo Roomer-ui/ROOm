@@ -1,118 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyCards - HDFC Bank</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f7fd;
+      color: #000;
+      text-align: center;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link 
-      rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-      crossorigin="anonymous">
-    
-    <title>Offers</title>
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
-    <style>
-      body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: #fff;
-        margin: 0;
-        padding: 0;
-      }
-      h2 {
-        color: #AE275F;
-        font-weight: bold;
-        font-size: 28px;
-        text-align: center;
-        margin-bottom: 15px;
-      }
-      .highlight {
-        color: black;
-      }
-      .btn-download {
-        display: inline-block;
-        padding: 12px 24px;
-        color: #fff;
-        background: #AE275F;
-        border-radius: 30px;
-        font-size: 16px;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: 0.3s;
-      }
-      .btn-download:hover {
-        background: #8a1e4c;
-        text-decoration: none;
-      }
-      .download-box {
-        background: #fff;
-        border-radius: 0;
-        padding: 25px 15px;
-        margin: 0;
-        text-align: center;
-      }
-      .offer-text {
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 20px;
-      }
-      img.offer-img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 0 !important; /* no rounded corners */
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
+    .top-banner {
+      background: #003f87;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
 
-    <main>
+    .logo-hdfc {
+      height: 40px;
+      margin-bottom: 10px;
+    }
 
-      <!-- Top Images -->
-      <img src="./img/1.png" alt="" class="offer-img">
-      <img src="./img/2.jpg" alt="" class="offer-img">
+    .mycards-title {
+      font-size: 28px;
+      margin: 10px 0;
+    }
 
-      <!-- Download Box -->
-      <div class="download-box">
-        <h2>Download <span class="highlight">Our App</span></h2>
-        <p class="offer-text">
-          Enjoy <b>2X EDGE REWARDS Points*</b> on online spends with our Credit Card
-        </p>
-        <a class="btn-download" href="/play-store/">Download Now</a>
+    .made-digital {
+      font-size: 12px;
+      color: #bbb;
+    }
+
+    .partners {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    .partner-logo {
+      height: 25px;
+    }
+
+    .slider-section {
+      margin-top: 20px;
+    }
+
+    .slider-text {
+      font-size: 16px;
+      margin: 0 20px;
+    }
+
+    .slider-dots {
+      margin: 10px 0;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      margin: 0 3px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot.active {
+      background-color: #fff;
+    }
+
+    .middle-section {
+      padding: 30px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .decoration-img {
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    .middle-section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .note {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .footer {
+      padding: 20px;
+      background: #e6eef4;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .footer-links {
+      margin: 10px 0;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .powered {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-banner">
+      <img src="MyCardslogo.png" alt="HDFC Bank" class="logo-hdfc"/>
+      <h1 class="mycards-title">MyCards</h1>
+      <p class="made-digital">MADE DIGITAL BY</p>
+      <div class="partners">
+        <img src="MyCardslogo_1.png" class="partner-logo" alt="HDFC Bank" />
+        <img src="unnamed.png" class="partner-logo" alt="Now" />
       </div>
+      <div class="slider-section">
+        <p class="slider-text">One stop to manage Credit Card, Consumer Loans, and more</p>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
 
-      <!-- More Images -->
-      <img src="./img/3.jpeg" alt="" class="offer-img">
-      <img src="./img/4.jpg" alt="" class="offer-img">
-      <img src="./img/7.png" alt="" class="offer-img">
-      <img src="./img/8.png" alt="" class="offer-img">
-      <img src="./img/9.png" alt="" class="offer-img">
+    <div class="middle-section">
+      
+      <h2>Let's get started</h2>
+      <a href="/playstore/" class="download-button">Download App</a>
+      <p class="note">MyCards is best viewed on Mobile</p>
+    </div>
 
-    </main>
-
-    <!-- jQuery, Popper.js, Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
-      crossorigin="anonymous"></script>
-
-    <!-- Script: Only mobile allow -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        if (window.innerWidth > 768) {
-          // Desktop/tablet users ko 404 show kare
-          document.body.innerHTML = "<h1 style='text-align:center;margin-top:20%;font-size:40px;color:#AE275F;'>404 - Page Not Found</h1>";
-        }
-      });
-    </script>
-  </body>
+    <footer class="footer">
+      <p>&copy; Copyright 2025 HDFC Bank Ltd.</p>
+      <div class="footer-links">
+        <a href="#">Cookie Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p class="powered">Powered by <strong>R360</strong></p>
+    </footer>
+  </div>
+</body>
 </html>
